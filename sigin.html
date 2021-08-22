@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGNIn</title>
+       <!-- font awesome cdn link  -->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+       <!-- custom css file link  -->
+       <link rel="stylesheet" href="media/css/style.css">
+   <!--Bootsrap CSS  -->
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+   
+</head>
+<body>
+    <div class="container ">
+        <div class="row form">
+            <div class=" col-md-6  my-5">
+        
+    <div class="form-border form-1">
+        <a href="#" class="logo"><i class="fas fa-utensils"></i>food</a>
+        <div class="form-group">
+            
+              <div class="form-group">
+          <input type="email" class="form-control" placeholder="Email" id="email1" aria-describedby="emailHelp">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        
+          <div class="form-group">
+            <input type="password"  placeholder="Password" class="form-control" id="password1" >
+          </div>
+          <select class="fadeIn third countries form-control " id="select">
+            
+            <option value="  " selected class="select-country text-center">Select a Account Type</option>
+            
+            <option value="User" >User</option>
+            <option value="BUSINESS">BUSINESS</option>
+                  </select>
+                  </div>
+    
+      
+        <button type="submit" class="btn btn-danger" onclick="login()">SIGNIN</button>
+      </form>
+      <div class="form-group">
+      
+    </div>
+</div>
+</div>
+
+
+
+
+
+    <!-- firebase************************************************************ -->
+    
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    
+<script src="media/js/firebase.js"></script>
+<script src="media/js/create-account.js"></script>
+</body>
+</html>
